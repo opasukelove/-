@@ -1,0 +1,55 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>就サポ | 名古屋大学 就職活動サポーター</title><style>:root{font-family:system-ui,-apple-system,'Noto Sans JP',sans-serif;color:#20344a;background:#f6f9fc}*{box-sizing:border-box}body{margin:0}header{background:white;border-bottom:1px solid #e3e9f0;padding:17px max(20px,calc((100vw - 1000px)/2));display:flex;justify-content:space-between;align-items:center}a{color:#175aa2}nav a{margin-left:16px;text-decoration:none;font-size:14px}main{max-width:1000px;margin:auto;padding:28px 20px 70px}.hero{background:linear-gradient(125deg,#124a85,#2c86b9);color:white;border-radius:22px;padding:45px 35px}.hero h1{font-size:clamp(27px,5vw,42px);margin:10px 0}.hero p{line-height:1.8}.pill{display:inline-block;background:#d9efff;color:#15528a;padding:5px 12px;border-radius:30px;font-size:13px}section{margin-top:40px}h2{font-size:23px}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}.card{background:white;border:1px solid #e2eaf2;border-radius:16px;padding:20px;line-height:1.7}.muted{color:#64748b;font-size:14px}.calendar{background:white;border:1px solid #e2eaf2;border-radius:18px;padding:20px}.calendar-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}button{border:1px solid #d4e0ea;border-radius:10px;background:white;padding:10px 15px;cursor:pointer;color:#164a7b}.week,.dates{display:grid;grid-template-columns:repeat(7,1fr);gap:5px}.week span{text-align:center;font-size:13px;color:#64748b}.day{min-height:66px;border:1px solid #e9eef4;border-radius:9px;padding:7px;position:relative;font-size:14px}.day.has-event{background:#e9f5ff;border-color:#95c7ec;cursor:pointer}.day.has-event:after{content:'●';color:#247bb3;position:absolute;bottom:5px;left:8px;font-size:10px}.day.active{outline:2px solid #246ca7}.details{margin-top:15px;background:#f1f7fd;border-radius:12px;padding:15px}.notice{background:#fff7e6;border:1px solid #f3dcaa;border-radius:12px;padding:12px 15px;font-size:13px;margin-top:15px}footer{text-align:center;padding:25px;color:#64748b;font-size:13px}@media(max-width:600px){nav{display:none}.hero{padding:30px 23px}.day{min-height:49px;padding:5px;font-size:12px}.calendar{padding:12px}}</style></head><body><header><strong>就サポ <span class="muted">｜名古屋大学</span></strong><nav><a href="#about">就活サポーターとは</a><a href="#schedule">開催日程</a><a href="#places">活動場所</a></nav></header><main><div class="hero"><span class="pill">学生による就職活動サポート</span><h1>就活のこと、<br>気軽に相談してみませんか？</h1><p>就職活動の疑問や不安を、学生サポーターと一緒に考えます。<br>開催日時は下のカレンダーから確認できます。</p><a href="#schedule" style="display:inline-block;background:white;color:#175a95;text-decoration:none;padding:12px 19px;border-radius:10px;font-weight:bold">開催日程を見る ↓</a></div><section id="about"><h2>就活サポーターとは？</h2><p>就活サポーターは、学生同士で就職活動の相談ができる活動です。相談内容がまだまとまっていなくても大丈夫です。</p><div class="cards"><div class="card"><strong>💬 就活の悩み相談</strong><p class="muted">就職活動の進め方や不安について、一緒に整理します。</p></div><div class="card"><strong>📝 ES・面接の相談</strong><p class="muted">エントリーシートや面接準備について相談できます。</p></div><div class="card"><strong>🧭 進路の相談</strong><p class="muted">進路選びや情報収集について、学生目線でお話しします。</p></div></div></section><section id="schedule"><h2>開催カレンダー</h2><p class="muted">日付を選ぶと、開催時間と場所を確認できます。</p><p id="sync-status" class="muted" role="status">公開用スプレッドシートに接続しています…</p><div class="calendar"><div class="calendar-head"><button id="prev" aria-label="前月">‹ 前月</button><strong id="month"></strong><button id="next" aria-label="翌月">翌月 ›</button></div><div class="week"><span>日</span><span>月</span><span>火</span><span>水</span><span>木</span><span>金</span><span>土</span></div><div class="dates" id="dates"></div><div class="details" id="details" aria-live="polite">日付を選択してください。</div></div><div class="notice">開催情報は公開用スプレッドシートから取得します。取得に失敗した場合、古い予定は表示しません。</div></section><section id="places"><h2>活動場所</h2><div class="cards"><div class="card"><strong>📍 中央図書館キャリアサポートセンター出張所</strong><p>中央図書館2階の入館ゲートを通り、向かって右奥にあります。</p><p class="muted">詳しい開催日時はカレンダーをご確認ください。</p></div><div class="card"><strong>📍 キャリアサポートセンター</strong><p>キャリアサポートセンター 1階窓口</p><p class="muted">詳しい開催日時はカレンダーをご確認ください。</p></div></div></section></main><footer>就サポ｜名古屋大学 就職活動サポーター（試作サイト）</footer><script>// 公開用シートのCSV URL。CSVでの取得は公開後にブラウザで確認してください。
+window.SHUSAPO_CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSfL6_dGTPhaImpwLPFI9nY_l-aleUlgailEx39UpxYIZmQROLD-1PdHBMEdpQswPEJrwC2Qq6q90bF/pub?gid=0&single=true&output=csv';
+</script><script>
+// 日程は公開専用のGoogleスプレッドシートから読み込みます。
+const events = {};
+let cursor = new Date(2026,10,1);let selected = null;
+const pad=n=>String(n).padStart(2,'0');
+const key=(y,m,d)=>`${y}-${pad(m+1)}-${pad(d)}`;
+function render(){
+ const y=cursor.getFullYear(),m=cursor.getMonth();document.getElementById('month').textContent=`${y}年 ${m+1}月`;
+ const dates=document.getElementById('dates');dates.innerHTML='';const offset=new Date(y,m,1).getDay(),count=new Date(y,m+1,0).getDate();
+ for(let i=0;i<offset;i++)dates.appendChild(document.createElement('div'));
+ for(let d=1;d<=count;d++){
+  const k=key(y,m,d),entries=events[k]||[];const b=document.createElement('button');
+  b.className='day'+(entries.length?' has-event':'')+(selected===k?' active':'');b.textContent=d;b.setAttribute('aria-label',`${m+1}月${d}日`);
+  b.onclick=()=>{selected=k;render()};dates.appendChild(b);
+ }
+ const detail=document.getElementById('details');
+ if(!selected||!selected.startsWith(`${y}-${pad(m+1)}`)){detail.textContent='日付を選択してください。';return}
+ const entries=events[selected]||[];detail.textContent='';const heading=document.createElement('strong');heading.textContent=`${selected.replaceAll('-','/')} の開催情報`;detail.appendChild(heading);
+ if(!entries.length){const p=document.createElement('p');p.textContent='現在、登録された開催予定はありません。';detail.appendChild(p)}
+ else entries.forEach(e=>{const p=document.createElement('p');p.textContent=`${e.time}｜${e.place}`;detail.appendChild(p)});
+}
+document.getElementById('prev').onclick=()=>{cursor.setMonth(cursor.getMonth()-1);selected=null;render()};
+document.getElementById('next').onclick=()=>{cursor.setMonth(cursor.getMonth()+1);selected=null;render()};
+// ダブルクォート内のカンマ・改行に対応したCSVパーサー
+function parseCSV(input){
+ const rows=[];let row=[],cell='',quoted=false;
+ for(let i=0;i<input.length;i++){
+  const c=input[i];if(c==='"') {if(quoted&&input[i+1]==='"'){cell+='"';i++}else quoted=!quoted}
+  else if(c===','&&!quoted){row.push(cell);cell=''}
+  else if((c==='\n'||c==='\r')&&!quoted){if(c==='\r'&&input[i+1]==='\n')i++;row.push(cell);if(row.some(v=>v.trim()))rows.push(row);row=[];cell=''}
+  else cell+=c;
+ }
+ row.push(cell);if(row.some(v=>v.trim()))rows.push(row);return rows;
+}
+function normalizeDate(s){const m=String(s||'').trim().match(/^(\d{4})[\/.-](\d{1,2})[\/.-](\d{1,2})$/);if(!m)return null;const y=+m[1],mo=+m[2],d=+m[3];const dt=new Date(y,mo-1,d);return dt.getFullYear()===y&&dt.getMonth()===mo-1&&dt.getDate()===d?key(y,mo-1,d):null}
+async function loadEvents(){
+ const status=document.getElementById('sync-status');const url=window.SHUSAPO_CSV_URL;
+ if(!url){status.textContent='現在、開催情報の公開準備中です。';return}
+ try{
+  const res=await fetch(url,{cache:'no-store'});if(!res.ok)throw new Error('HTTP '+res.status);
+  const rows=parseCSV((await res.text()).replace(/^\uFEFF/,''));
+  const headers=rows.shift()?.map(x=>x.trim())||[];const fields=['日付','開始時刻','終了時刻','場所','状態'];
+  if(!fields.every(x=>headers.includes(x)))throw new Error('列名が一致しません');
+  Object.keys(events).forEach(k=>delete events[k]);let total=0;
+  for(const row of rows){const obj=Object.fromEntries(headers.map((h,i)=>[h,(row[i]||'').trim()]));const date=normalizeDate(obj['日付']);
+   if(!date||obj['状態']!=='開催'||!obj['開始時刻']||!obj['終了時刻']||!obj['場所'])continue;
+   (events[date]??=[]).push({time:`${obj['開始時刻']}〜${obj['終了時刻']}`,place:obj['場所']});total++;
+  }
+  status.textContent=`スプレッドシートから取得成功（${total}件）。シートを更新した後、ページを再読み込みすると反映されます。`;render();
+ }catch(e){status.textContent='スプレッドシートとの接続に失敗しました。日程は表示していません。公開CSVの設定とネット接続を確認してください。';console.error(e)}
+}
+render();loadEvents();
+</script></body></html>
